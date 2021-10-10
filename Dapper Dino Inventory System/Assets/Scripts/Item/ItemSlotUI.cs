@@ -21,6 +21,7 @@ public abstract class ItemSlotUI : MonoBehaviour, IDropHandler
     protected virtual void Start()
     {
         SlotIndex = transform.GetSiblingIndex();
+        Debug.Log(SlotIndex);
         UpdateSlotUI();
     }
 

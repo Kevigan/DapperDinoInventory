@@ -11,7 +11,7 @@ public class HotbarItemDragHandler : ItemDragHandler
         {
             base.OnPointerUp(eventData);
 
-            if(eventData.hovered.Count == 0)
+            if (eventData.hovered.Count == 0)
             {
                 (ItemSlotUI as HotbarSlot).SlotItem = null;
             }

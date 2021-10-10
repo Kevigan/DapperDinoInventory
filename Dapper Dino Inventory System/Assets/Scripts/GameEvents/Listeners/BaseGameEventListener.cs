@@ -4,12 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-//    public abstract class BaseGameEventListener<T, E, UER> : MonoBehaviour,
-//        IGameEventListener<T> where : BaseGameEvent<T> where UER : UnityEvent<T>     //Type, Event, UnityEventResponse
-//{
-//    [SerializeField] private E gameEvent;
-//    public E GameEvent { get { return gameEvent; set{ BaseGameEvent = value; } }
-//}
+
 
 public abstract class BaseGameEventListener<T, E, UER> : MonoBehaviour,IGameEventListener<T> 
     where E: BaseGameEvent<T>

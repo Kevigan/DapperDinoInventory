@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: SpeedPotion
   description: Move faster
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 1c03cba2df0c2f5489583ca1ad01cc0a, type: 3}
+  isHotbarUseable: 1
   rarity: {fileID: 11400000, guid: a01e9a24688b6c14b84ef40c5c450e3a, type: 2}
   sellPrice: 5
   maxStack: 10

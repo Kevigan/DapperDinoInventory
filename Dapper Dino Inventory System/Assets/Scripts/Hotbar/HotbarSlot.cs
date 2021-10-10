@@ -30,7 +30,7 @@ public class HotbarSlot : ItemSlotUI, IDropHandler
     public void UseSlot(int index)
     {
         if (index != SlotIndex) return;
-
+        Debug.Log("1");
         //Use item
     }
 
@@ -38,10 +38,10 @@ public class HotbarSlot : ItemSlotUI, IDropHandler
     {
         ItemDragHandler itemDragHandler = eventData.pointerDrag.GetComponent<ItemDragHandler>();
         if (itemDragHandler == null) return;
-
+        
         InventorySlot inventorySlot = itemDragHandler.ItemSlotUI as InventorySlot;
 
-        if(inventorySlot != null)
+        if(inventorySlot != null /*|| !slotItem.isHotbarUseable*/)
         {
             SlotItem = inventorySlot.ItemSlot.item;
             return;
@@ -59,7 +59,7 @@ public class HotbarSlot : ItemSlotUI, IDropHandler
 
     public override void UpdateSlotUI()
     {
-        if(SlotItem == null)
+        if(SlotItem == null || !slotItem.isHotbarUseable)
         {
             EnableSlotUI(false);
             return;

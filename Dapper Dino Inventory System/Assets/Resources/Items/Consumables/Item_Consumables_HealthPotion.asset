@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Health Potion
   description: Gain life
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 891b417b9d32c9244a95ade4212d6b7a, type: 3}
+  isHotbarUseable: 1
   rarity: {fileID: 11400000, guid: e3071ed8cb4b28a42be472f838057615, type: 2}
   sellPrice: 1
   maxStack: 5
